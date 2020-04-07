@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владимир Сапронов](https://up.htmlacademy.ru/adaptive/19/user/1213483).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Ничипорчук](https://up.htmlacademy.ru/adaptive/19/user/612797).
 
 ---
 
