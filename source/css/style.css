@@ -326,5 +326,204 @@ body {
   border-radius: 50px;
   opacity: 0.1;
 }
+.history__slogan {
+  margin: 49px 0;
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: center;
+  color: #283645;
+}
+.history__form-fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.history__form-persona,
+.history__form-contact,
+.history__form-emotion {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.history__item {
+  margin-bottom: 29px;
+}
+.history__item:last-of-type {
+  margin-bottom: 44px;
+}
+.history__label {
+  display: block;
+  padding-left: 29px;
+  font-size: 14px;
+  line-height: 2.14;
+  text-transform: uppercase;
+  text-align: left;
+  color: #d22856;
+}
+.history__input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 276px;
+  height: 59px;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: left;
+  color: #283645;
+  border: 2px solid #e5e5e5;
+}
+.history__form-progress {
+  background-color: #f2f2f2;
+}
+.history__form-legend {
+  padding-top: 41px;
+  margin-bottom: 42px;
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #d22856;
+}
+.history__progress-item {
+  margin-bottom: 47px;
+  padding-left: 22px;
+  height: 35px;
+}
+.history__progress-item:last-of-type {
+  margin-bottom: 44px;
+}
+.history__progress-input {
+  display: none;
+}
+.history__progress-label {
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: left;
+  color: #283645;
+}
+.history__progress-label::before {
+  display: inline-block;
+  content: "";
+  margin-right: 33px;
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+.history__progress-input:checked ~ .history__progress-label::before {
+  background-image: url("../img/icon-yes.svg");
+  background-position: 50% 50%;
+  background-color: "#d4345f";
+}
+.history__form-application {
+  background-color: #f2f2f2;
+}
+.history__application-item {
+  padding-left: 21px;
+  margin-bottom: 39px;
+}
+.history__application-item:last-of-type {
+  margin-bottom: 44px;
+}
+.history__application-input {
+  display: none;
+}
+.history__application-label {
+  position: relative;
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: left;
+  color: #283645;
+}
+.history__application-label::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 33px;
+  display: inline-block;
+  content: "";
+  width: 37px;
+  height: 36px;
+  vertical-align: middle;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.history__application-input:checked ~ .history__application-label::after {
+  position: absolute;
+  top: 9px;
+  left: 13px;
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #d22856;
+}
+.history__form-contact {
+  margin-top: 41px;
+  margin-bottom: 44px;
+}
+.net__item-label::before {
+  margin-right: 11px;
+  margin-left: 1px;
+  display: inline-block;
+  content: "";
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
+}
+.history__emotion-legend {
+  background-color: #ffffff;
+  margin-bottom: 19px;
+}
+.history__emotion {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 52px;
+  padding-top: 23px;
+  padding-left: 19px;
+  width: 276px;
+  min-height: 197px;
+  border: 2px solid #e5e5e5;
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: left;
+  color: #283645;
+}
+.history__form-button {
+  margin-left: 22px;
+  width: 276px;
+  height: 59px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  border: 2px solid #2aab6d;
+  background-color: #2aab6d;
+}
+.history__note {
+  margin-top: 46px;
+  font-size: 14px;
+  line-height: 2.14;
+  text-transform: uppercase;
+  text-align: center;
+  color: #283645;
+}
+.history__note-star {
+  color: #d22856;
+}
 
 /*# sourceMappingURL=style.css.map */
