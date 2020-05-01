@@ -3,81 +3,88 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Логотип PINK">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" value="открыть меню">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Html academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней</h1>
+      <div class="page-header__controls">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg"
+  width="75px" height="22px" alt="Логотип PINK">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button" value="открыть меню">
+            <img class="page-header__logo-image" src="img/icon-menu-burger.svg
+    " width="50px" height="24px" alt="Бургер-меню" aria-label="Открыть меню"></button>
+          <div class="main-nav__wrapper visually-hidden">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a>Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Html academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
       <section class="download-application">
         <div class="download-application__wrapper wrapper">
           <h2 class="visually-hidden">Загрузка приложения</h2>
-          <b class="download-application__slogan">Взгляните на жизнь иначе!</b>
-          <img class="download-application__background-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Изображение приложения PINK">
+          <p class="download-application__slogan">Взгляните на жизнь иначе!</p>
+          <img class="download-application__image" src="img/iphone-hand-mobile@1x.png"
+  width="258px" height="286px" alt="Фото приложения PINK">
           <a class="download-application__button" href="#">Скачать приложение</a>
           <ul class="download-application__list">
             <li class="download-application__list-item">
               <a class="download-application__list-link" href="#" aria-label="Приложение для айос">
-                <img class="download-application__list-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Иконка айос">
+                <img class="download-application__list-image" src="img/logo-apple.svg" width="47px" height="56px" alt="Иконка айос">
               </a>
             </li>
             <li class="download-application__list-item">
               <a class="download-application__list-link" href="#" aria-label="Приложение для андроид">
-                <img class="download-application__list-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Иконка андроид">
+                <img class="download-application__list-image" src="img/logo-android.svg" width="43px" height="47px" alt="Иконка андроид">
               </a>
             </li>
             <li class="download-application__list-item">
               <a class="download-application__list-link" href="#" aria-label="Приложение для виндовс">
-                <img class="download-application__list-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Иконка виндовс">
+                <img class="download-application__list-image" src="img/logo-microsoft.svg" width="44px" height="41px" alt="Иконка виндовс">
               </a>
             </li>
           </ul>
-          <p>Доступно для IPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <p class="download-application__info-win">Доступно&nbsp;для&nbsp;IPhone,&nbsp;iPad,&nbsp;Android, Windows&nbsp;Phone,&nbsp;OS&nbsp;X,&nbsp;Windows&nbsp;8</p>
         </div>
       </section>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней</h1>
       <section class="characteristics-application">
         <div class="characteristics-application__wrapper wrapper">
           <h2 class="visually-hidden">Характеристики приложения</h2>
           <p class="characteristics-application__slogan">
-            <span class="characteristics-application__slogan-question">Устали от серости мегаполиса?</span>
-            <span class="characteristics-application__slogan-answer">Нам есть, что вам предложить!</span>
+            <span class="characteristics-application__slogan-question">Устали&nbsp;от&nbsp;серости мегаполиса?</span>
+            <span class="characteristics-application__slogan-answer">Нам&nbsp;есть,&nbsp;что&nbsp;вам предложить!</span>
           </p>
-          <ul class="characteristics-application__list">
-            <li class="characteristics-application__item">
-              <b class="characteristics-application__item-title">Поднимает настроение</b>
-              <p class="characteristics-application__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="characteristics-application__item">
-              <b class="characteristics-application__item-title">Меняет мир вокруг</b>
-              <p class="characteristics-application__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="characteristics-application__item">
-              <b class="characteristics-application__item-title">Заводит новых друзей</b>
-              <p class="characteristics-application__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
+            <ul class="characteristics-application__list">
+              <li class="characteristics-application__item">
+                <b class="characteristics-application__item-title">Поднимает настроение</b>
+                <p class="characteristics-application__item-description characteristics-application__item-description1">Приложение&nbsp;позволит&nbsp;вам&nbsp;победить осеннюю&nbsp;хандру&nbsp;и&nbsp;депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="characteristics-application__item">
+                <b class="characteristics-application__item-title">Меняет мир вокруг</b>
+                <p class="characteristics-application__item-description characteristics-application__item-description2">Сделайте&nbsp;снимок&nbsp;и&nbsp;украсьте&nbsp;его смайликом&nbsp;или&nbsp;текстовой&nbsp;подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="characteristics-application__item">
+                <b class="characteristics-application__item-title">Заводит новых друзей</b>
+                <p class="characteristics-application__item-description characteristics-application__item-description3">Ставьте&nbsp;лайки,&nbsp;комментируйте, делитесь&nbsp;фотографиями&nbsp;с&nbsp;друзьями&nbsp;и заводите новых</p>
+              </li>
+            </ul>
         </div>
       </section>
       <section class="feedback">
@@ -86,32 +93,24 @@
           <input class="feedback__slider-input feedback__slider-input--slide1" type="radio" id="feedback__slider-slide1" name="toggle" checked>
           <input class="feedback__slider-input feedback__slider-input--slide2" type="radio" id="feedback__slider-slide2" name="toggle">
           <input class="feedback__slider-input feedback__slider-input--slide3" type="radio" id="feedback__slider-slide3" name="toggle">
-          <div class="slider__labels">
+          <div class="feedback__slider-labels">
             <label class="feedback__slider-label feedback__slider-label--slide1" for="feedback__slider-slide1" aria-label="первый отзыв"></label>
             <label class="feedback__slider-label feedback__slider-label--slide2" for="feedback__slider-slide2"  aria-label="второй отзыв"></label>
             <label class="feedback__slider-label feedback__slider-label--slide3" for="feedback__slider-slide3"  aria-label="третий отзыв"></label>
           </div>
           <ul class="feedback__slider-list">
-            <li class="feedback__slider-item">
+            <li class="feedback__slider-item feedback__slider-item1">
               <b class="feedback__slider-header">Николай Петров</b>
-              <p class="feedback__slider-description">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-              А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+              <p class="feedback__slider-description">&laquo;Это&nbsp;приложение&nbsp;перевернуло&nbsp;мой&nbsp;мир и&nbsp;позволило&nbsp;по-новому&nbsp;взглянуть&nbsp;на привычные&nbsp;серые&nbsp;вещи!&nbsp;А&nbsp;ещё&nbsp;я познакомился&nbsp;со&nbsp;своей&nbsp;будущей&nbsp;женой в&nbsp;комментариях&nbsp;к&nbsp;выложенной фотографии!&raquo;</p>
             </li>
-            <li class="feedback__slider-item">
-              <b class="feedback__slider-header">Николай Петров</b>
-              <p class="feedback__slider-description">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-              А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+            <li class="feedback__slider-item feedback__slider-item2">
+              <b class="feedback__slider-header">Василий Пупкин</b>
+              <p class="feedback__slider-description">&laquo;Это&nbsp;приложение&nbsp;перевернуло&nbsp;мой&nbsp;мир и&nbsp;позволило&nbsp;по-новому&nbsp;взглянуть&nbsp;на привычные&nbsp;серые&nbsp;вещи!&nbsp;А&nbsp;ещё&nbsp;я познакомился&nbsp;со&nbsp;своей&nbsp;будущей&nbsp;женой в&nbsp;комментариях&nbsp;к&nbsp;выложенной фотографии!&raquo;</p>
             </li>
-            <li class="feedback__slider-item">
-              <b class="feedback__slider-header">Николай Петров</b>
-              <p class="feedback__slider-description">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-              А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+            <li class="feedback__slider-item feedback__slider-item3">
+              <b class="feedback__slider-header">Просто Васечкин</b>
+              <p class="feedback__slider-description">&laquo;Это&nbsp;приложение&nbsp;перевернуло&nbsp;мой&nbsp;мир и&nbsp;позволило&nbsp;по-новому&nbsp;взглянуть&nbsp;на привычные&nbsp;серые&nbsp;вещи!&nbsp;А&nbsp;ещё&nbsp;я познакомился&nbsp;со&nbsp;своей&nbsp;будущей&nbsp;женой в&nbsp;комментариях&nbsp;к&nbsp;выложенной фотографии!&raquo;</p>
             </li>
-          </ul>
-          <ul class="feedback__slider-images">
-            <li class="feedback__slider-image"><img class="feedback__slider-image1" src="img/slide1.png" width="698" height="413" alt="слайдер1"></li>
-            <li class="feedback__slider-image"><img class="feedback__slider-image2" src="img/slide2.png" width="663" height="430" alt="слайдер2"></li>
-            <li class="feedback__slider-image"><img class="feedback__slider-image3" src="img/slide3.png" width="759" height="411" alt="слайдер3"></li>
           </ul>
         </div>
       </section>
@@ -122,16 +121,16 @@
             <tr class="tariff__table-row">
               <th class="tariff__table-head"></th>
               <th class="tariff__table-head">
-                <b>База</b>
-                <span>1,99 USD</span>
+                <b class="tariff__table-type">База</b>
+                <span class="tariff__table-price">1,99&nbsp;USD</span>
               </th>
               <th class="tariff__table-head">
-                <b>Стандарт</b>
-                <span>3,99 USD</span>
+                <b class="tariff__table-type">Стандарт</b>
+                <span class="tariff__table-price">3,99&nbsp;USD</span>
               </th>
               <th class="tariff__table-head">
-                <b>Анлим</b>
-                <span>9,99 USD</span>
+                <b class="tariff__table-type">Анлим</b>
+                <span class="tariff__table-price">9,99&nbsp;USD</span>
               </th>
             </tr>
             <tr class="tariff__table-row">
@@ -139,37 +138,37 @@
                 Розовый фильтр
               </td>
               <td class="tariff__table-cell">
-                <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Галочка">
+                <img class="page-header__logo-image" src="img/icon-yes.svg" width="31px" height="21px" alt="Галочка">
               </td>
               <td class="tariff__table-cell">
-                <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Галочка">
+                <img class="page-header__logo-image" src="img/icon-yes.svg" width="31px" height="21px" alt="Галочка">
               </td>
               <td class="tariff__table-cell">
-                <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Галочка">
+                <img class="page-header__logo-image" src="img/icon-yes.svg" width="31px" height="21px" alt="Галочка">
               </td>
             </tr>
             <tr class="tariff__table-row">
               <td class="tariff__table-cell">Смайлики</td>
               <td class="tariff__table-cell">
-                <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Крестик">
+                <img class="page-header__logo-image" src="img/icon-no.svg" width="27px" height="26px" alt="Крестик">
               </td>
               <td class="tariff__table-cell">
-                <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Галочка">
+                <img class="page-header__logo-image" src="img/icon-yes.svg" width="31px" height="21px" alt="Галочка">
               </td>
               <td class="tariff__table-cell">
-                <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Галочка">
+                <img class="page-header__logo-image" src="img/icon-yes.svg" width="31px" height="21px" alt="Галочка">
               </td>
             </tr>
             <tr class="tariff__table-row">
               <td class="tariff__table-cell">Комментарии</td>
               <td class="tariff__table-cell">
-                <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Крестик">
+                <img class="page-header__logo-image" src="img/icon-no.svg" width="27px" height="26px" alt="Крестик">
               </td>
               <td class="tariff__table-cell">
-                <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Крестик">
+                <img class="page-header__logo-image" src="img/icon-no.svg" width="27px" height="26px" alt="Крестик">
               </td>
               <td class="tariff__table-cell">
-                <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Галочка">
+                <img class="page-header__logo-image" src="img/icon-yes.svg" width="31px" height="21px" alt="Галочка">
               </td>
             </tr>
           </table>
@@ -180,16 +179,16 @@
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами</p>
           <p class="contacts__tel">
-            <b class="contacts__tel-slogan">Звоните:</b>
-            <a class="contacts__tel-link" href="tel:+78125556666">тел. +7 (812) 555-66-66</a>
+            <b class="contacts__tel-slogan contacts__head">Звоните:</b>
+            <a class="contacts__tel-link contacts__description" href="tel:+78125556666">тел. +7 (812) 555-66-66</a>
           </p>
           <p class="contacts__mail">
-            <b class="contacts__mail-slogan">Пишите:</b>
-            <a class="contacts__mail-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy</a>
+            <b class="contacts__mail-slogan contacts__head">Пишите:</b>
+            <a class="contacts__mail-link contacts__description" href="mailto:mail@htmlacademy.ru">mail@htmlacademy</a>
           </p>
           <p class="contacts__address">
-            <b class="contacts__address-slogan">Приезжайте в гости:</b>
-            <span class="contacts__address-description">ул. Большая Конюшенная, 19/8</span>
+            <b class="contacts__address-slogan contacts__head">Приезжайте в гости:</b>
+            <span class="contacts__address-description contacts__description">ул. Большая Конюшенная, 19/8</span>
           </p>
           <div class="contacts__map">
             <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1584527863029!5m2!1sru!2sru" width="1200" height="416" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="-1"></iframe>
@@ -198,30 +197,29 @@
       </section>
     </main>
     <footer class="page-footer">
-      <h2 class="visually-hidden">Футер</h2>
       <a class="page-footer__logo">
-        <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Логотип PINK">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146px" height="40px" alt="Логотип PINK">
       </a>
       <ul class="page-footer__social-list">
         <li class="page-footer__social-item">
           <a class="page-footer__social-link" href="#" aria-label="Твиттер">
-            <img class="page-footer__social-tw" src="https://via.placeholder.com/150x150" width="" height="" alt="Твиттер">
+            <img class="page-footer__social-tw page-footer__social-icon" src="img/icon-twitter.svg" width="18px" height="15px" alt="Твиттер">
           </a>
         </li>
         <li class="page-footer__social-item">
           <a class="page-footer__social-link" href="#" aria-label="Фейсбук">
-            <img class="page-footer__social-fb" src="https://via.placeholder.com/150x150" width="" height="" alt="Фейсбук">
+            <img class="page-footer__social-fb page-footer__social-icon" src="img/icon-facebook.svg" width="9px" height="19px" alt="Фейсбук">
           </a>
         </li>
         <li class="page-footer__social-item">
           <a class="page-footer__social-link" href="#" aria-label="Ютуб">
-            <img class="page-footer__social-youtube" src="https://via.placeholder.com/150x150" width="" height="" alt="Ютуб">
+            <img class="page-footer__social-youtube page-footer__social-icon" src="img/icon-youtube.svg" width="15px" height="14px" alt="Ютуб">
           </a>
         </li>
       </ul>
       <a class="page-footer__developer">
         <span class="page-footer__developer-text">Разработано</span>
-        <img class="page-footer__developer-image" src="https://via.placeholder.com/150x150" width="" height="" alt="ХТМЛ Академия">
+        <img class="page-footer__developer-image" src="img/htmlacademy.svg" width="27px" height="34px" alt="ХТМЛ Академия">
       </a>
     </footer>
   </body>
