@@ -525,5 +525,51 @@ body {
 .history__note-star {
   color: #d22856;
 }
+.page-footer {
+  text-align: center;
+}
+.page-footer__logo {
+  display: block;
+  margin-top: 64px;
+  margin-bottom: 43px;
+}
+.page-footer__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  width: 190px;
+}
+.page-footer__social-item {
+  margin-right: 17px;
+  width: 46px;
+  height: 46px;
+  line-height: 50px;
+  vertical-align: middle;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+  background-color: #fefefe;
+}
+.page-footer__social-item:last-of-type {
+  margin-right: 0;
+}
+.page-footer__social-link {
+  display: block;
+}
+.page-footer__developer {
+  display: block;
+  margin: 50px 0;
+}
+.page-footer__developer-text {
+  font-size: 14px;
+  line-height: 1.29;
+  color: #283645;
+}
+.page-footer__developer-image {
+  margin-left: 15px;
+  vertical-align: middle;
+}
 
 /*# sourceMappingURL=style.css.map */
