@@ -2,6 +2,7 @@
   margin-top: 46px;
   padding-left: 58px;
   padding-right: 60px;
+  margin-bottom: 0;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
@@ -14,13 +15,35 @@
 }
 
 .characteristics-application__list {
-  height: 828px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   background-color: #f2f2f2;
+}
+
+.characteristics-application__list::before {
+  display: block;
+  content: "";
+  width: 320px;
+  height: 80px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -20px;
+}
+
+.characteristics-application__list-mobile {
+  height: 748px;
+  overflow: hidden;
+}
+
+.characteristics-application__list-mobile::after {
+  display: block;
+  margin: 45px auto 0px auto;
+  content: "";
+  width: 157px;
+  height: 320px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
 .characteristics-application__item {
@@ -49,5 +72,5 @@
 
 .characteristics-application__item-description3 {
   padding-left: 30px;
-  padding-left: 31px;
+  padding-right: 31px;
 }
