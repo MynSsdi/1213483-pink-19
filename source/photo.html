@@ -2,12 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header page-header__photo">
-      <div class="page-header__controls">
+      <div class="page-header__controls wrapper">
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg"
   width="75px" height="22px" alt="Логотип PINK">
@@ -34,7 +35,7 @@
           </div>
         </nav>
       </div>
-      <h1 class="page__header-head">Фотографии пользователей</h1>
+      <h1 class="page__header-head wrapper">Фотографии пользователей</h1>
     </header>
     <main class="page-main">
       <section class="photo">
@@ -52,7 +53,7 @@
               <p class="photo__item-description">
                 Прыгать&nbsp;или&nbsp;нет?&nbsp;Напишите&nbsp;в комментарии&nbsp;свой&nbsp;совет&nbsp;и&nbsp;смотрите прямую&nbsp;трансляцию&nbsp;в&nbsp;перископе, задавайте&nbsp;свои&nbsp;вопросы!
               </p>
-              <button class="photo__item-like">Нравится:</button>
+              <button class="photo__item-like">Нравится:215</button>
             </li>
             <li class="photo__item">
               <a class="photo__item-link" href="#">
@@ -63,7 +64,7 @@
               <p class="photo__item-description">
                 Вчера&nbsp;на&nbsp;луну&nbsp;летал,&nbsp;сегодня&nbsp;в руки&nbsp;к&nbsp;нам&nbsp;попал.
               </p>
-              <button class="photo__item-like">Нравится:</button>
+              <button class="photo__item-like">Нравится:356</button>
             </li>
             <li class="photo__item">
               <a class="photo__item-link" href="#">
@@ -74,7 +75,7 @@
               <p class="photo__item-description">
                 Соседи будут рады!
               </p>
-              <button class="photo__item-like">Нравится:</button>
+              <button class="photo__item-like">Нравится:666</button>
             </li>
             <li class="photo__item">
               <a class="photo__item-link" href="#">
@@ -85,7 +86,7 @@
               <p class="photo__item-description">
                 Здесь&nbsp;могла&nbsp;быть&nbsp;ваша&nbsp;цитата&nbsp;о высоком&nbsp;и&nbsp;вечном.
               </p>
-              <button class="photo__item-like">Нравится:</button>
+              <button class="photo__item-like">Нравится:215</button>
             </li>
             <li class="photo__item">
               <a class="photo__item-link" href="#">
@@ -96,7 +97,7 @@
               <p class="photo__item-description">
                 Самая кубанская в мире!
               </p>
-              <button class="photo__item-like">Нравится:</button>
+              <button class="photo__item-like">Нравится:4</button>
             </li>
             <li class="photo__item">
               <a class="photo__item-link" href="#">
@@ -107,7 +108,7 @@
               <p class="photo__item-description">
                 Где снег-то?
               </p>
-              <button class="photo__item-like">Нравится:</button>
+              <button class="photo__item-like">Нравится:150</button>
             </li>
             <li class="photo__item">
               <a class="photo__item-link" href="#">
@@ -118,7 +119,7 @@
               <p class="photo__item-description">
                 Всем GM и взаимные лайки!
               </p>
-              <button class="photo__item-like">Нравится:</button>
+              <button class="photo__item-like">Нравится:256</button>
             </li>
           </ul>
         </div>
@@ -134,19 +135,21 @@
             <div class="post__image">
               <img class="post__image-photo" src="img/photo-road-mobile@1x.jpg" width="280px" height="374px" alt="Загружаемая фотография">
             </div>
-            <div class="post__controls">
+            <div class="post__parameters">
               <form class="post__form">
-                <div class="post__panorama post__control">
-                  <label class="post__panorama-icon" for="post__range1" aria-label="Панорама"></label>
-                  <input class="post__panorama-range" type="range" id="post__range1" name="toggle">
-                </div>
-                <div class="post__saturation post__control">
-                  <label class="post__saturation-icon" for="post__range2" aria-label="Насыщенность"></label>
-                  <input class="post__saturation-range visually-hidden" type="range" id="post__range2" name="toggle">
-                </div>
-                <div class="post__brightness post__control">
-                  <label class="post__brightness-icon" for="post__range3" aria-label="Яркость"></label>
-                  <input class="post__brightness-range visually-hidden" type="range" id="post__range3" name="toggle">
+                <div class="post__controls">
+                  <div class="post__panorama post__control">
+                    <label class="post__panorama-icon" for="post__range1" aria-label="Кроп"></label>
+                    <input class="post__panorama-range post__input" type="range" id="post__range1" name="toggle">
+                  </div>
+                  <div class="post__saturation post__control">
+                    <label class="post__saturation-icon" for="post__range2" aria-label="Заливка"></label>
+                    <input class="post__saturation-range post__input visually-hidden" type="range" id="post__range2" name="toggle">
+                  </div>
+                  <div class="post__brightness post__control">
+                    <label class="post__brightness-icon" for="post__range3" aria-label="Контраст"></label>
+                    <input class="post__brightness-range post__input visually-hidden" type="range" id="post__range3" name="toggle">
+                  </div>
                 </div>
                 <button class="button post__submit" type="submit" value="post__form-submit">Запостить</button>
                 <button class="button post__reset" type="reset" value="post__form-reset">Отмена</button>

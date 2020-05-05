@@ -1,20 +1,54 @@
+.contacts {
+  text-align: center;
+}
+
 .contacts__slogan {
   font-size: 24px;
   font-weight: 300;
-  text-align: center;
   color: #283645;
 }
 
 .contacts__head {
   font-size: 18px;
   font-weight: bold;
-  text-align: center;
   color: #283645;
 }
 
 .contacts__description {
   font-size: 24px;
   font-weight: 300;
-  text-align: center;
   color: #d22856;
+}
+
+.contacts__tel {
+  text-align: center;
+  padding: 0 50px;
+}
+
+.contacts__tel-link,
+.contacts__mail-link {
+  text-decoration: none;
+}
+
+.contacts__mail {
+  padding: 0 30px;
+}
+
+.contacts__address {
+  padding: 0 50px;
+}
+
+.contacts__map {
+  position: relative;
+}
+
+.contacts__map::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 320px;
+  height: 60px;
+  background-image: url('../img/bg-triangle-white-footer.svg');
+  background-repeat: no-repeat;
+  background-position: 50% -10px;
 }
