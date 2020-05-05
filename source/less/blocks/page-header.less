@@ -1,14 +1,14 @@
 .page-header {
-  height: 733px;
+  min-height: 733px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 50% 0;
   background-color: #17212D;
 }
 
 .page-header__controls {
   box-sizing: border-box;
-  height: 66px;
+  min-height: 66px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,8 +22,9 @@
 }
 
 .page__header-head {
+  box-sizing: border-box;
   margin-top: 25px;
-  padding: 0 76px;
+  padding: 0 48px;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
@@ -31,12 +32,7 @@
   color: #ffffff;
 }
 
-.page__header-form {
-  padding-left: 48px;
-  padding-right: 46px;
-}
-
 .page-header__photo,
 .page-header__form {
-  height: 235px;
+  min-height: 235px;
 }

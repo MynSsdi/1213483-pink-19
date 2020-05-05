@@ -1,11 +1,10 @@
 .tariff {
   min-height: 506px;
   position: relative;
-  overflow: hidden;
   background-color: #f2f2f2;
 }
 
-.tariff::before {
+.tariff__wrapper::before {
   display: block;
   content: "";
   width: 320px;
@@ -93,8 +92,9 @@
 
 .tariff__slider-labels {
   position: absolute;
-  top: 447px;
-  left: 129px;
+  bottom: 35px;
+  left: 50%;
+  margin-left: -31px;
 }
 
 .tariff__slider-input--slide1:checked ~ .tariff__slider-labels .tariff__slider-label--slide1::before,
