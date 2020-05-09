@@ -7,13 +7,17 @@
 }
 
 .page-header__controls {
-  box-sizing: border-box;
   min-height: 66px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header__wrapper {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
+  min-height: 66px;
   align-items: center;
   padding: 21px 20px;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-nav__toggle {
@@ -35,4 +39,17 @@
 .page-header__photo,
 .page-header__form {
   min-height: 235px;
+}
+
+@media (min-width: @tablet-width) {
+  .wrapper {
+    width: 660px;
+  }
+  .page-header {
+    min-height: 729px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+  .page-header__wrapper {
+    min-height: 110px;
+  }
 }

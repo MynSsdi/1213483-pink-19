@@ -67,5 +67,37 @@
 .feedback__slider-input--slide1:checked ~ .feedback__slider-list .feedback__slider-item1,
 .feedback__slider-input--slide2:checked ~ .feedback__slider-list .feedback__slider-item2,
 .feedback__slider-input--slide3:checked ~ .feedback__slider-list .feedback__slider-item3 {
-  display: block;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback__slider-list {
+    width: 660px;
+  }
+  .feedback__slider-item {
+    margin: 0 11px 39px 11px;
+    text-align: center;
+  }
+  .feedback__slider-header {
+    order: 1;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2.14;
+    color: #000000;
+  }
+  .feedback__slider-signature {
+    order: 2;
+    display: block;
+    font-size: 14px;
+    line-height: 2.14;
+    text-align: center;
+    color: #283654;
+  }
+  .feedback__slider-description {
+    order: 0;
+    font-size: 18px;
+    line-height: 1.67;
+    color: #283645;
+  }
 }

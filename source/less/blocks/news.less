@@ -1,0 +1,38 @@
+@media (min-width: @tablet-width) {
+  .news {
+    display: block;
+    margin-top: 50px;
+  }
+  .news__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .news__wrapper::before {
+    display: block;
+    margin-right: 70px;
+    content: "";
+    min-width: 238px;
+    height: 276px;
+    background-image: url("../img/icon-timer.svg");
+    background-size: 238px 276px;
+  }
+  .news__block {
+    text-align: left;
+    padding-right: 36px;
+  }
+  .news__head {
+    padding-right: 30px;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  .news__content,
+  .mews__link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: #283645;
+  }
+  .news__link {
+    color: #d22856;
+    text-decoration: none;
+  }
+}

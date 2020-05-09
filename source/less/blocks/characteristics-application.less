@@ -1,7 +1,7 @@
 .characteristics-application__slogan {
   margin-top: 46px;
-  padding-left: 58px;
-  padding-right: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin-bottom: 0;
   font-size: 24px;
   font-weight: 300;
@@ -14,29 +14,31 @@
   margin-bottom: 40px;
 }
 
+.characteristics-application__menu {
+  min-height: 700px;
+  background-color: #f2f2f2;
+}
+
+.characteristics-application__menu::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.0' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='1200px' height='94.074px' viewBox='0 0 1200 94.074' enable-background='new 0 0 1200 94.074' xml:space='preserve'%3e%3cpolygon fill='%23ffffff' points='1200,0 0,0 0,94.074 '/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.characteristics-application__menu-wrapper {
+  position: relative;
+}
 .characteristics-application__list {
   margin: 0;
+  margin-top: 40px;
   padding: 0;
   list-style: none;
   background-color: #f2f2f2;
 }
 
-.characteristics-application__list::before {
-  display: block;
-  content: "";
-  width: 320px;
-  height: 80px;
-  background-image: url("../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
-  background-position: 0 -20px;
-}
-
-.characteristics-application__list-mobile {
-  min-height: 748px;
-  overflow: hidden;
-}
-
-.characteristics-application__list-mobile::after {
+.characteristics-application__list::after {
   display: block;
   margin: 45px auto 0px auto;
   content: "";
@@ -50,8 +52,17 @@
   text-align: center;
 }
 
+.characteristics-application__item:first-of-type {
+  margin-bottom: 40px;
+}
+
+.characteristics-application__item:nth-of-type(2) {
+  margin-bottom: 38px;
+}
+
 .characteristics-application__item-title {
   font-size: 18px;
+  line-height: 1.71;
   font-weight: bold;
   color: black;
 }
@@ -60,17 +71,71 @@
   font-size: 14px;
   line-height: 1.71;
   color: #283645;
+  opacity: 0.7;
 }
 
 .characteristics-application__item-description1 {
-  padding: 0 34px;
+  padding: 0 30px;
 }
 
 .characteristics-application__item-description2 {
-  padding: 0 33px;
+  padding: 0 30px;
 }
 
 .characteristics-application__item-description3 {
   padding-left: 30px;
   padding-right: 31px;
+}
+
+@media (min-width: @tablet-width) {
+  .characteristics-application__slogan {
+    margin-top: 46px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 0;
+    font-size: 40px;
+    font-weight: 300;
+  }
+  .characteristics-application__slogan-question {
+    margin-bottom: 0;
+  }
+  .characteristics-application__slogan-answer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .characteristics-application__menu {
+    min-height: 590px;
+  }
+  .characteristics-application__list {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .characteristics-application__list::after {
+    position: absolute;
+    margin: 0;
+    top: -70px;
+    left: 0;
+    width: 300px;
+    height: 520px;
+    background-size: cover;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+  }
+  .characteristics-application__items {
+    width: 320px;
+  }
+  .characteristics-application__item {
+    text-align: left;
+  }
+
+  .characteristics-application__item:first-of-type {
+    margin-bottom: 40px;
+  }
+  .characteristics-application__item:nth-of-type(2) {
+    margin-bottom: 35px;
+  }
+  .characteristics-application__item-description {
+    padding: 0;
+  }
 }

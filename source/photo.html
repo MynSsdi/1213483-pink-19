@@ -131,31 +131,33 @@
             Затмите&nbsp;их&nbsp;всех!
             Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось&nbsp;в телефоне!
           </p>
+        </div>
           <div class="post__customization">
-            <div class="post__image">
-              <img class="post__image-photo" src="img/photo-road-mobile@1x.jpg" width="280px" height="374px" alt="Загружаемая фотография">
+            <div class="wrapper">
+              <div class="post__image">
+                <img class="post__image-photo" src="img/photo-road-mobile@1x.jpg" width="280px" height="374px" alt="Загружаемая фотография">
+              </div>
+              <div class="post__parameters">
+                <form class="post__form">
+                  <div class="post__controls">
+                    <div class="post__panorama post__control">
+                      <label class="post__panorama-icon" for="post__range1" aria-label="Кроп"></label>
+                      <input class="post__panorama-range post__input" type="range" id="post__range1" name="toggle">
+                    </div>
+                    <div class="post__saturation post__control">
+                      <label class="post__saturation-icon" for="post__range2" aria-label="Заливка"></label>
+                      <input class="post__saturation-range post__input visually-hidden" type="range" id="post__range2" name="toggle">
+                    </div>
+                    <div class="post__brightness post__control">
+                      <label class="post__brightness-icon" for="post__range3" aria-label="Контраст"></label>
+                      <input class="post__brightness-range post__input visually-hidden" type="range" id="post__range3" name="toggle">
+                    </div>
+                  </div>
+                  <button class="button post__submit" type="submit" value="post__form-submit">Запостить</button>
+                  <button class="button post__reset" type="reset" value="post__form-reset">Отмена</button>
+                </form>
+              </div>
             </div>
-            <div class="post__parameters">
-              <form class="post__form">
-                <div class="post__controls">
-                  <div class="post__panorama post__control">
-                    <label class="post__panorama-icon" for="post__range1" aria-label="Кроп"></label>
-                    <input class="post__panorama-range post__input" type="range" id="post__range1" name="toggle">
-                  </div>
-                  <div class="post__saturation post__control">
-                    <label class="post__saturation-icon" for="post__range2" aria-label="Заливка"></label>
-                    <input class="post__saturation-range post__input visually-hidden" type="range" id="post__range2" name="toggle">
-                  </div>
-                  <div class="post__brightness post__control">
-                    <label class="post__brightness-icon" for="post__range3" aria-label="Контраст"></label>
-                    <input class="post__brightness-range post__input visually-hidden" type="range" id="post__range3" name="toggle">
-                  </div>
-                </div>
-                <button class="button post__submit" type="submit" value="post__form-submit">Запостить</button>
-                <button class="button post__reset" type="reset" value="post__form-reset">Отмена</button>
-              </form>
-            </div>
-          </div>
         </div>
       </section>
     </main>
