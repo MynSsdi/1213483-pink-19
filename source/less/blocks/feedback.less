@@ -1,7 +1,6 @@
 .feedback {
   position: relative;
   margin-top: 49px;
-
 }
 
 .feedback__slider-labels {
@@ -100,4 +99,71 @@
     line-height: 1.67;
     color: #283645;
   }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback {
+    margin-top: 193px;
+  }
+
+  .feedback__slider-list {
+    position: relative;
+    width: 715px;
+    margin: 0 auto;
+  }
+
+  .feedback__slider-list::before {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    margin-left: -40px;
+    display: block;
+    content: "";
+    width: 79px;
+    height: 63px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='79px' height='63px' viewBox='0 0 78.672 63.789' enable-background='new 0 0 78.672 63.789' xml:space='preserve'%3e%3cg%3e%3cpath d='M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172 c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z'/%3e%3c/g%3e%3cg%3e%3cpath d='M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z'/%3e%3c/g%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+  }
+
+  .feedback__slider-item {
+    position: relative;
+    margin: 0 11px 39px 11px;
+    text-align: center;
+  }
+
+  .feedback__slider-item::before {
+    position: absolute;
+    top: 50px;
+    left: -105px;
+    display: block;
+    content: "";
+    width: 22px;
+    height: 41px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+  }
+
+  .feedback__slider-item::after {
+    position: absolute;
+    top: 50px;
+    right: -105px;
+    display: block;
+    content: "";
+    width: 22px;
+    height: 41px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+  }
+
+  .feedback__slider-header {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .feedback__slider-signature {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+
 }

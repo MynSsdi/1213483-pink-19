@@ -17,6 +17,11 @@ body {
     width: 660px;
   }
 }
+@media (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+  }
+}
 .page-header {
   position: relative;
   min-height: 733px;
@@ -453,7 +458,7 @@ body {
     margin-bottom: 0;
   }
   .characteristics-application__menu {
-    min-height: 590px;
+    min-height: 716px;
   }
   .characteristics-application__list::after {
     display: none;
@@ -462,15 +467,52 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 73px;
     width: 1200px;
   }
-  .characteristics-application__item:first-of-type {
-    margin-bottom: 40px;
+  .characteristics-application__item {
+    width: 240px;
+    text-align: center;
   }
-  .characteristics-application__item:nth-of-type(2) {
-    margin-bottom: 35px;
+  .characteristics-application__item::before {
+    margin-bottom: 60px;
+    display: block;
+    content: "";
+    width: 292px;
+    height: 302px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+  .characteristics-application__item1::before {
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+  }
+  .characteristics-application__item2::before {
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+  }
+  .characteristics-application__item3::before {
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+  }
+  .characteristics-application__item-title {
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
   }
   .characteristics-application__item-description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .characteristics-application__item:first-of-type {
+    margin: 0;
+    margin-right: 137px;
+    margin-left: 163px;
+  }
+  .characteristics-application__item:nth-of-type(2) {
+    margin: 0;
+    margin-right: 134px;
+  }
+  .characteristics-application__item-description {
+    margin: 0;
+    margin-top: 30px;
     padding: 0;
   }
 }
@@ -575,6 +617,63 @@ body {
     font-size: 18px;
     line-height: 1.67;
     color: #283645;
+  }
+}
+@media (min-width: 1200px) {
+  .feedback {
+    margin-top: 193px;
+  }
+  .feedback__slider-list {
+    position: relative;
+    width: 715px;
+    margin: 0 auto;
+  }
+  .feedback__slider-list::before {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    margin-left: -40px;
+    display: block;
+    content: "";
+    width: 79px;
+    height: 63px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='79px' height='63px' viewBox='0 0 78.672 63.789' enable-background='new 0 0 78.672 63.789' xml:space='preserve'%3e%3cg%3e%3cpath d='M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172 c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z'/%3e%3c/g%3e%3cg%3e%3cpath d='M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z'/%3e%3c/g%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+  }
+  .feedback__slider-item {
+    position: relative;
+    margin: 0 11px 39px 11px;
+    text-align: center;
+  }
+  .feedback__slider-item::before {
+    position: absolute;
+    top: 50px;
+    left: -105px;
+    display: block;
+    content: "";
+    width: 22px;
+    height: 41px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+  }
+  .feedback__slider-item::after {
+    position: absolute;
+    top: 50px;
+    right: -105px;
+    display: block;
+    content: "";
+    width: 22px;
+    height: 41px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+  }
+  .feedback__slider-header {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .feedback__slider-signature {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 .tariff {
@@ -727,6 +826,37 @@ body {
     text-transform: none;
   }
 }
+@media (min-width: 1200px) {
+  .tariff__table {
+    position: static;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .tariff__table-head {
+    padding: 19px 67px 13px 70px;
+    width: 152px;
+    height: 75px;
+  }
+  .tariff__table-type {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .tariff__table-price {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .tariff__table-cell {
+    width: 233px;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 2.14;
+    text-transform: none;
+  }
+  .tariff__table-cell {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
 .contacts {
   text-align: center;
 }
@@ -802,6 +932,26 @@ body {
   .contacts__address {
     padding: 0;
     width: 237px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts__slogan {
+    width: 470px;
+    margin: 0 auto;
+    margin-top: 75px;
+    margin-bottom: 70px;
+    font-size: 50px;
+    font-weight: 300;
+  }
+  .contacts__mail {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .contacts__address {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 .photo__slogan {
@@ -1258,9 +1408,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .news__wrapper::before {
     display: block;
@@ -1268,8 +1415,9 @@ body {
     content: "";
     min-width: 238px;
     height: 276px;
-    background-image: url("../img/icon-timer.svg");
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='238px' height='276px' viewBox='0 0 298 345.097' enable-background='new 0 0 298 345.097' xml:space='preserve'%3e%3cpath d='M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317 c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097 c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167 S209.843,306.264,149,306.264z'/%3e%3c/svg%3e ");
     background-size: 238px 276px;
+    background-repeat: no-repeat;
   }
   .news__block {
     text-align: left;
@@ -1289,6 +1437,32 @@ body {
   .news__link {
     color: #d22856;
     text-decoration: none;
+  }
+}
+@media (min-width: 1200px) {
+  .news {
+    margin: 0;
+    padding-left: 131px;
+    background-color: #f2f2f2;
+  }
+  .news__wrapper::before {
+    margin-right: 67px;
+    width: 298px;
+    height: 345px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='298px' height='345.097px' viewBox='0 0 298 345.097' enable-background='new 0 0 298 345.097' xml:space='preserve'%3e%3cpath d='M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317 c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097 c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167 S209.843,306.264,149,306.264z'/%3e%3c/svg%3e");
+    background-size: 298px 345px;
+  }
+  .news__block {
+    width: 530px;
+  }
+  .wrapper {
+    width: 1200px;
+  }
+  .news__content,
+  .mews__link {
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
   }
 }
 
