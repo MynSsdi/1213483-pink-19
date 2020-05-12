@@ -1,9 +1,15 @@
 .history__slogan {
+  width: 271px;
   margin: 49px 0;
   font-size: 14px;
   line-height: 2.14;
   text-align: center;
   color: #283645;
+}
+
+.history__form {
+  display: flex;
+  flex-direction: column;
 }
 
 .history__form-fieldset {
@@ -54,6 +60,7 @@
 }
 
 .history__form-legend {
+  width: 100%;
   padding-top: 41px;
   margin-bottom: 42px;
   font-size: 14px;
@@ -62,6 +69,15 @@
   text-align: center;
   background-color: #f2f2f2;
   color: #d22856;
+}
+
+.history__form-span {
+  display: block;
+  margin: 0 auto;
+}
+
+.history__progress-head {
+  width: 250px;
 }
 
 .history__progress-item {
@@ -218,4 +234,117 @@
 
 .history__note-star {
   color: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+  .history__slogan {
+    width: 500px;
+    margin: 100px 0 76px 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .history__slogan-span {
+    display: inline-block;
+  }
+
+  .history__label,
+  .history__input {
+    display: inline-block;
+  }
+
+  .history__label {
+    margin-right: 20px;
+  }
+
+  .history__form-fieldset:not(:first-of-type) {
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+
+  .history__form-legend {
+    display: block;
+    width: auto;
+    padding-top: 0px;
+    background-color: #ffffff;
+  }
+
+  .history__progress-head {
+    width: 436px;
+  }
+
+  .history__contact-head,
+  .history__emotion-head {
+    width: 260px;
+  }
+  .history__application-head {
+    width: 368px;
+  }
+
+  .history__form-persona {
+    order: 0;
+    min-height: 289px;
+  }
+
+  .history__surname,
+  .history__name {
+    margin-bottom: 56px;
+  }
+
+  .history__item:last-of-type {
+    margin-bottom: 50px;
+  }
+
+  .history__form-progress {
+    order: 3;
+    min-height: 549px;
+    margin-bottom: 62px;
+  }
+
+  .history__form-contact {
+    order: 2;
+    min-height: 306px;
+    margin-top: 0;
+    margin-bottom: 62px;
+  }
+
+  .history__form-application {
+    order: 1;
+    min-height: 295px;
+    margin-bottom: 62px;
+  }
+
+  .history__application-list {
+    margin-left: 59px;
+  }
+
+  .history__application-item {
+    margin-bottom: 39px;
+  }
+
+  .history__application-label::before {
+    margin-right: 23px;
+  }
+
+  .history__form-emotion {
+    order: 4;
+    min-height: 289px;
+  }
+
+  .history__emotion {
+      display: block;
+      width: 496px;
+      height: 189px;
+      margin: 0 auto;
+  }
+
+  .history__form-button {
+    order: 5;
+  }
+}
+@media (min-width: @desktop-width) {
+  .history__slogan {
+    width: 752px;
+    margin: 100px 0 89px 0;
+  }
 }

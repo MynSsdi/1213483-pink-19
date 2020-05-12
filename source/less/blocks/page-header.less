@@ -1,3 +1,5 @@
+// index.html
+
 .page-header {
   position: relative;
   min-height: 733px;
@@ -144,5 +146,33 @@
     text-align: left;
     vertical-align: middle;
     text-transform: none;
+  }
+}
+
+// photo.html
+
+@media (min-width: @tablet-width) {
+  .page-header__photo {
+    min-height: 440px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__photo {
+    min-height: 390px;
+  }
+}
+
+// form.html
+
+@media (min-width: @tablet-width) {
+  .page-header__form {
+    min-height: 440px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__form {
+    min-height: 390px;
   }
 }
