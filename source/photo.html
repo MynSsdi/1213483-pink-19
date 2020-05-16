@@ -8,45 +8,60 @@
   </head>
   <body>
     <header class="page-header page-header__photo">
-      <div class="page-header__controls wrapper">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg"
-  width="75px" height="22px" alt="Логотип PINK">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button" value="открыть меню">
-            <img class="page-header__logo-image" src="img/icon-menu-burger.svg
-    " width="50px" height="24px" alt="Бургер-меню" aria-label="Открыть меню"></button>
-          <div class="main-nav__wrapper visually-hidden">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a>Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a href="photo.html">Фотографии</a>
-              </li>
-              <li class="site-list__item">
-                <a href="#">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                <a href="#">Html academy</a>
-              </li>
-            </ul>
+      <div class="page-header__controls">
+        <div class="page-header__wrapper wrapper">
+          <div class="page-header__head">
+            <a class="page-header__logo">
+              <picture>
+                <source srcset="img/logo-pink-white-tablet.svg" width="147px" height="40px" media="(min-width: 660px)">
+                <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 1200px)">
+                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg"
+                width="75px" height="22px" alt="Логотип PINK">
+              </picture>
+            </a>
+            <button class="main-nav__toggle visually-hidden" type="button" value="открыть меню">
+              <img class="page-header__logo-image page-header__logo-image1" src="img/icon-menu-burger.svg
+              " width="50px" height="24px" alt="Бургер-меню" aria-label="Открыть меню">
+              <img class="page-header__logo-image page-header__logo-image2 visually-hidden" src="img/icon-menu-cross.svg
+              " width="50px" height="24px" alt="Закрытие бургер-меню" aria-label="Закрыть меню">
+            </button>
           </div>
-        </nav>
+          <nav class="main-nav">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--active">
+                  <a class="site-list__item-link">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__item-link" href="photo.html">Фотографии</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__item-link" href="#">Конкурс</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__item-link" href="#">Html academy</a>
+                </li>
+              </ul>
+          </nav>
+        </div>
       </div>
-      <h1 class="page__header-head wrapper">Фотографии пользователей</h1>
+      <section class="download-application__photo ">
+          <h1 class="download-application__photo-head wrapper">Фотографии пользователей</h1>
+      </section>
     </header>
     <main class="page-main">
       <section class="photo">
         <div class="photo__wrapper wrapper">
           <h2 class="visually-hidden">Список фотографий</h2>
-          <p class="photo__slogan">Взгляните&nbsp;на&nbsp;фотографии,&nbsp;которые выкладывают&nbsp;пользователи! Видите,&nbsp;как&nbsp;не&nbsp;хватает&nbsp;ваших?</p>
+          <p class="photo__slogan">Взгляните&nbsp;на&nbsp;фотографии,&nbsp;которые выкладывают пользователи! Видите,&nbsp;как&nbsp;не&nbsp;хватает&nbsp;ваших?</p>
           <ul class="photo__list">
-            <li class="photo__item">
+            <li class="photo__item photo__item1">
               <span class="photo__item-header">Панорама дня</span>
               <a class="photo__item-link photo__item-link--active" href=#>
-                <img class="photo__item-image" src="img/panorama-mobile@1x.jpg" width="320px" height="137px" alt="Панорама дня">
+                <picture class="photo__source1">
+                  <source srcset="img/panorama-tablet@1x.jpg" width="1050" height="645" media="(min-width: 660px) and (max-width: 1200px)">
+                  <source srcset="img/panorama-desktop@1x.jpg" width="1200" height="506" media="(min-width: 1200px)">
+                  <img class="photo__item-image photo__item-image1" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+                </picture>
               </a>
               <b class="photo__item-name">Анна</b>
               <time class="photo__item-time">(5 минут назад)</time>
@@ -57,7 +72,11 @@
             </li>
             <li class="photo__item">
               <a class="photo__item-link" href="#">
-                <img class="photo__item-image" src="img/photo-car-mobile@1x.jpg" width="280px" height="180px" alt="Автомобиль">
+                <picture>
+                  <source srcset="img/photo-car-tablet@1x.jpg" width="300" height="300" media="(min-width: 660px) and (max-width: 1200px)">
+                  <source srcset="img/photo-car-desktop@1x.jpg" width="300" height="400" media="(min-width: 1200px)">
+                  <img class="photo__item-image" src="img/photo-car-mobile@1x.jpg" alt="Автомобиль">
+                </picture>
               </a>
               <b class="photo__item-name">Левон</b>
               <time class="photo__item-time">(5 часов назад)</time>
@@ -68,18 +87,26 @@
             </li>
             <li class="photo__item">
               <a class="photo__item-link" href="#">
-                <img class="photo__item-image" src="img/photo-drumset-mobile@1x.jpg" width="280px" height="180px" alt="Барабанная установка">
+                <picture>
+                  <source srcset="img/photo-drumset-tablet@1x.jpg" width="300" height="300" media="(min-width: 660px) and (max-width: 1200px)">
+                  <source srcset="img/photo-drumset-desktop@1x.jpg" width="300" height="400" media="(min-width: 1200px)">
+                  <img class="photo__item-image" src="img/photo-drumset-mobile@1x.jpg" alt="Барабанная установка">
+                </picture>
               </a>
               <b class="photo__item-name">Антон</b>
               <time class="photo__item-time">(12 часов назад)</time>
               <p class="photo__item-description">
-                Соседи будут рады!
+                Соседи будут рады
               </p>
               <button class="photo__item-like">Нравится:666</button>
             </li>
             <li class="photo__item">
               <a class="photo__item-link" href="#">
-                <img class="photo__item-image" src="img/photo-window-mobile@1x.jpg" width="280px" height="180px" alt="Окно">
+                <picture>
+                  <source srcset="img/photo-window-tablet@1x.jpg" width="300" height="300" media="(min-width: 660px) and (max-width: 1200px)">
+                  <source srcset="img/photo-window-desktop@1x.jpg" width="300" height="400" media="(min-width: 1200px)">
+                  <img class="photo__item-image" src="img/photo-window-mobile@1x.jpg" alt="Окно">
+                </picture>
               </a>
               <b class="photo__item-name">Борис</b>
               <time class="photo__item-time">(20 часов назад)</time>
@@ -90,7 +117,11 @@
             </li>
             <li class="photo__item">
               <a class="photo__item-link" href="#">
-                <img class="photo__item-image" src="img/photo-fair-mobile@1x.jpg" width="280px" height="180px" alt="Кубанская выставка">
+                <picture>
+                  <source srcset="img/photo-fair-tablet@1x.jpg" width="300" height="300" media="(min-width: 660px) and (max-width: 1200px)">
+                  <source srcset="img/photo-fair-desktop@1x.jpg" width="300" height="400" media="(min-width: 1200px)">
+                  <img class="photo__item-image" src="img/photo-fair-mobile@1x.jpg" alt="Кубанская выставка">
+                </picture>
               </a>
               <b class="photo__item-name">Сергей</b>
               <time class="photo__item-time">(25 часов назад)</time>
@@ -101,7 +132,11 @@
             </li>
             <li class="photo__item">
               <a class="photo__item-link" href="#">
-                <img class="photo__item-image" src="img/photo-pov-mobile@1x.jpg" width="280px" height="180px" alt="Ноги на природе">
+                <picture>
+                  <source srcset="img/photo-pov-tablet@1x.jpg" width="300" height="300" media="(min-width: 660px) and (max-width: 1200px)">
+                  <source srcset="img/photo-pov-desktop@1x.jpg" width="300" height="400" media="(min-width: 1200px)">
+                  <img class="photo__item-image" src="img/photo-pov-mobile@1x.jpg" alt="Ноги на природе">
+                </picture>
               </a>
               <b class="photo__item-name">Максим</b>
               <time class="photo__item-time">(40 часов назад)</time>
@@ -112,7 +147,11 @@
             </li>
             <li class="photo__item">
               <a class="photo__item-link" href="#">
-                <img class="photo__item-image" src="img/photo-wing-mobile@1x.jpg" width="280px" height="180px" alt="Крыло самолёта">
+                <picture>
+                  <source srcset="img/photo-wing-tablet@1x.jpg" width="300" height="300" media="(min-width: 660px) and (max-width: 1200px)">
+                  <source srcset="img/photo-wing-desktop@1x.jpg" width="300" height="400" media="(min-width: 1200px)">
+                  <img class="photo__item-image" src="img/photo-wing-mobile@1x.jpg" alt="Крыло самолёта">
+                </picture>
               </a>
               <b class="photo__item-name">Надежда</b>
               <time class="photo__item-time">(45 часов назад)</time>
@@ -131,58 +170,74 @@
             Затмите&nbsp;их&nbsp;всех!
             Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось&nbsp;в телефоне!
           </p>
+        </div>
           <div class="post__customization">
-            <div class="post__image">
-              <img class="post__image-photo" src="img/photo-road-mobile@1x.jpg" width="280px" height="374px" alt="Загружаемая фотография">
+            <div class="post__customization-wrapper wrapper">
+              <div class="post__image">
+                <picture>
+                  <source srcset="img/photo-road-tablet@1x.jpg" width="300" height="400" media="(min-width: 660px) and (max-width: 1200px)">
+                  <source srcset="img/photo-road-desktop@1x.jpg" width="300" height="400" media="(min-width: 1200px)">
+                  <img class="post__image-photo" src="img/photo-road-mobile@1x.jpg" alt="Загружаемая фотография">
+                </picture>
+              </div>
+              <div class="post__parameters">
+                <form class="post__form">
+                  <div class="post__controls">
+                    <div class="post__panorama post__control">
+                      <label class="post__panorama-icon post__icon" for="post__range1" aria-label="Кроп"></label>
+                      <input class="post__panorama-range post__input" type="range" id="post__range1" name="toggle">
+                    </div>
+                    <div class="post__saturation post__control">
+                      <label class="post__saturation-icon post__icon" for="post__range2" aria-label="Заливка"></label>
+                      <input class="post__saturation-range post__input visually-hidden" type="range" id="post__range2" name="toggle">
+                    </div>
+                    <div class="post__brightness post__control">
+                      <label class="post__brightness-icon post__icon" for="post__range3" aria-label="Контраст"></label>
+                      <input class="post__brightness-range post__input visually-hidden" type="range" id="post__range3" name="toggle">
+                    </div>
+                  </div>
+                  <button class="button post__submit post__button" type="submit" value="post__form-submit">Запостить</button>
+                  <button class="button post__reset post__button" type="reset" value="post__form-reset">Отмена</button>
+                </form>
+              </div>
             </div>
-            <div class="post__parameters">
-              <form class="post__form">
-                <div class="post__controls">
-                  <div class="post__panorama post__control">
-                    <label class="post__panorama-icon" for="post__range1" aria-label="Кроп"></label>
-                    <input class="post__panorama-range post__input" type="range" id="post__range1" name="toggle">
-                  </div>
-                  <div class="post__saturation post__control">
-                    <label class="post__saturation-icon" for="post__range2" aria-label="Заливка"></label>
-                    <input class="post__saturation-range post__input visually-hidden" type="range" id="post__range2" name="toggle">
-                  </div>
-                  <div class="post__brightness post__control">
-                    <label class="post__brightness-icon" for="post__range3" aria-label="Контраст"></label>
-                    <input class="post__brightness-range post__input visually-hidden" type="range" id="post__range3" name="toggle">
-                  </div>
-                </div>
-                <button class="button post__submit" type="submit" value="post__form-submit">Запостить</button>
-                <button class="button post__reset" type="reset" value="post__form-reset">Отмена</button>
-              </form>
-            </div>
-          </div>
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer visually-hidden">
       <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146px" height="40px" alt="Логотип PINK">
       </a>
       <ul class="page-footer__social-list">
         <li class="page-footer__social-item">
           <a class="page-footer__social-link" href="#" aria-label="Твиттер">
-            <img class="page-footer__social-tw page-footer__social-icon" src="img/icon-twitter.svg" width="18px" height="15px" alt="Твиттер">
+            <svg class="page-footer__social-tw page-footer__social-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="15px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve" alt="Твиттер">
+              <g id="W6EeEF_1_">
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+                </g>
+              </g>
+            </svg>
           </a>
         </li>
         <li class="page-footer__social-item">
           <a class="page-footer__social-link" href="#" aria-label="Фейсбук">
-            <img class="page-footer__social-fb page-footer__social-icon" src="img/icon-facebook.svg" width="9px" height="19px" alt="Фейсбук">
+            <svg class="page-footer__social-fb page-footer__social-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9px" height="19px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve" alt="Фейсбук">
+              <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+            </svg>
           </a>
         </li>
         <li class="page-footer__social-item">
           <a class="page-footer__social-link" href="#" aria-label="Ютуб">
-            <img class="page-footer__social-youtube page-footer__social-icon" src="img/icon-youtube.svg" width="15px" height="14px" alt="Ютуб">
+            <svg class="page-footer__social-youtube page-footer__social-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="14px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve" alt="Ютуб">
+              <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+            </svg>
           </a>
         </li>
       </ul>
       <a class="page-footer__developer">
         <span class="page-footer__developer-text">Разработано</span>
-        <img class="page-footer__developer-image" src="img/htmlacademy.svg" width="27px" height="34px" alt="ХТМЛ Академия">
+        <svg class="page-footer__developer-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#D22856" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
       </a>
     </footer>
   </body>
