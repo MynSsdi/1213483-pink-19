@@ -47,7 +47,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 66px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 .page-header__head,
@@ -87,6 +86,8 @@ body {
   display: block;
 }
 .main-nav__list {
+  position: relative;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,7 +138,7 @@ body {
 }
 @media (min-width: 660px) {
   .page-header {
-    min-height: 730px;
+    min-height: 729px;
   }
   .wrapper {
     min-width: 660px;
@@ -148,25 +149,25 @@ body {
 }
 @media (min-width: 1200px) {
   .page-header {
-    min-height: 730px;
+    position: relative;
+    min-height: 853px;
   }
-  .wrapper {
-    min-width: 1200px;
+  .page-header__controls {
+    position: relative;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.3);
   }
   .page-header__wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    background-color: rgba(0, 0, 0, 0);
   }
   .page-header__head,
   .main-nav__list {
     min-height: 110px;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .page-header__logo {
-    margin-left: 130px;
-    margin-right: 176px;
+    background-color: rgba(0, 0, 0, 0);
   }
   .main-nav {
     margin-right: 129px;
@@ -194,12 +195,7 @@ body {
 }
 @media (min-width: 660px) {
   .page-header__photo {
-    min-height: 440px;
-  }
-}
-@media (min-width: 1200px) {
-  .page-header__photo {
-    min-height: 390px;
+    min-height: 504px;
   }
 }
 @media (min-width: 660px) {
@@ -213,26 +209,53 @@ body {
   }
 }
 .download-application {
+  position: relative;
   width: 100%;
-  margin-top: -72px;
-  min-height: 647px;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+  min-height: 733px;
   border: 1px solid transparent;
 }
+.download-application::before {
+  display: block;
+  content: "";
+  margin-top: -66px;
+  min-width: 320px;
+  height: 462px;
+  position: relative;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  background-size: cover;
+}
 .download-application__wrapper {
+  position: relative;
+  border: 1px solid transparent;
+}
+.download-application__wrapper::before {
+  position: absolute;
+  top: -286px;
+  left: 0;
+  display: block;
+  content: "";
+  width: 258px;
+  height: 286px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-size: 258px auto;
-  background-position: 0 97px;
-  min-height: 462px;
+  background-size: 258px 286px;
+  background-position: 0 0;
+}
+.download-application__content {
+  position: absolute;
+  width: 320px;
+  margin: 0 auto;
+  top: -405px;
+  left: 50%;
+  margin-left: -160px;
 }
 .download-application__slogan {
-  margin-top: 78px;
-  margin-bottom: 348px;
-  padding-left: 40px;
-  padding-right: 49px;
+  width: 225px;
+  margin: 0 auto;
+  margin-top: 29px;
+  margin-bottom: 347px;
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
@@ -255,6 +278,7 @@ body {
   color: #ffffff;
 }
 .download-application__list {
+  width: 205px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,6 +294,10 @@ body {
   list-style: none;
 }
 .download-application__info-win {
+  margin: 0 auto;
+  margin-top: 28px;
+  margin-bottom: 35px;
+  width: 229px;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;
@@ -279,30 +307,30 @@ body {
 }
 @media (min-width: 660px) {
   .download-application {
+    min-height: 520px;
+  }
+  .download-application::before {
     margin-top: -110px;
     min-height: 729px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 50%;
   }
-  .download-application__wrapper {
-    margin-top: 183px;
+  .download-application__wrapper::before {
+    width: 700px;
+    height: 545px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-size: 700px auto;
-    background-position: -17px 0;
-    min-height: 545px;
-    border-top: 1px solid transparent;
+    background-size: 700px 545px;
+    top: -546px;
+    left: 0;
   }
   .download-application__content {
     width: 320px;
-  }
-  .download-application__content {
     margin: 0;
-    margin-left: 15px;
+    left: 20px;
+    top: -563px;
   }
   .download-application__slogan {
-    margin-top: 15px;
     margin-bottom: 39px;
-    margin-left: 20px;
-    margin-right: 20px;
     font-size: 40px;
   }
   .download-application__button {
@@ -312,31 +340,36 @@ body {
   .download-application__info-win {
     font-size: 18px;
     line-height: 1.33;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 1200px) {
   .download-application {
+    position: relative;
+    z-index: 0;
     margin-top: -110px;
+    min-height: 853px;
+  }
+  .download-application::before {
+    position: relative;
+    margin-top: 0;
     min-height: 853px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
   }
-  .download-application__wrapper {
-    margin-top: 209px;
+  .download-application__wrapper::before {
+    margin-top: -110px;
+    width: 1050px;
+    height: 645px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-size: 1050px auto;
-    background-position: 146px 0;
-    min-height: 645px;
+    background-size: 1050px 645px;
+    background-position: 0 0;
     border-top: 1px solid transparent;
   }
   .download-application__content {
     width: 320px;
-  }
-  .download-application__content {
-    margin: 0;
-    margin-left: 100px;
-  }
-  .download-application__slogan {
-    margin-top: 5px;
+    left: 110px;
+    top: -670px;
   }
   .download-application__button {
     font-size: 21px;
@@ -348,6 +381,7 @@ body {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
+  background-size: cover;
   border: 1px solid transparent;
 }
 .download-application__photo-head {
@@ -363,9 +397,12 @@ body {
 }
 @media (min-width: 660px) {
   .download-application__photo {
-    margin-top: -110px;
-    min-height: 440px;
+    margin-top: -66px;
+    min-height: 506px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
   }
   .download-application__photo-head {
     margin-top: 175px;
@@ -375,7 +412,8 @@ body {
 }
 @media (min-width: 1200px) {
   .download-application__photo {
-    min-height: 390px;
+    margin-top: -110px;
+    min-height: 504px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
   }
   .download-application__photo-head {
@@ -385,6 +423,7 @@ body {
   }
 }
 .download-application__form {
+  margin: 0;
   margin-top: -72px;
   min-height: 238px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -408,7 +447,7 @@ body {
 @media (min-width: 660px) {
   .download-application__form {
     margin-top: -110px;
-    min-height: 440px;
+    min-height: 550px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
   .download-application__form-head {
@@ -421,7 +460,7 @@ body {
 }
 @media (min-width: 1200px) {
   .download-application__form {
-    min-height: 390px;
+    min-height: 500px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
   }
   .download-application__form-head {
@@ -1073,6 +1112,9 @@ body {
             order: 2;
   }
 }
+.photo {
+  position: relative;
+}
 .photo__slogan {
   margin: 50px auto;
   width: 241px;
@@ -1099,9 +1141,40 @@ body {
   background-color: #f2f2f2;
   color: #283645;
 }
+.photo__item1 {
+  position: static;
+  margin-top: 185px;
+}
+/*.photo__item-image {
+  object-fit: cover;
+  object-position: center;
+  background-color: yellow;
+}*/
+.photo__source1 {
+  width: 100%;
+  position: absolute;
+  top: 186px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.photo__item-image1 {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .photo__item-header {
   position: absolute;
-  top: 0;
+  top: 186px;
   right: 0;
   z-index: 10;
   display: block;
@@ -1124,6 +1197,7 @@ body {
   margin-bottom: 25px;
 }
 .photo__item-link--active {
+  position: static;
   left: -37px;
 }
 .photo__item-time {
@@ -1171,8 +1245,15 @@ body {
     margin-right: 20px;
   }
   .photo__item1 {
-    width: 620px;
-    min-height: 630px;
+    width: 640px;
+    min-height: 121px;
+    margin-top: 500px;
+  }
+  .photo__source1 {
+    top: 228px;
+  }
+  .photo__item-header {
+    top: 228px;
   }
 }
 @media (min-width: 1200px) {
@@ -1186,7 +1267,14 @@ body {
   }
   .photo__item1 {
     width: 940px;
-    min-height: 602px;
+    min-height: 96px;
+    margin-top: 495px;
+  }
+  .photo__source1 {
+    top: 240px;
+  }
+  .photo__item-header {
+    top: 240px;
   }
 }
 .post__form {
@@ -1947,7 +2035,36 @@ body {
 }
 @media (min-width: 660px) {
   .page-footer {
-    margin: 0 20px 0 20px;
+    width: 660px;
+    margin: 0 auto;
+    min-height: 127px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .page-footer__logo,
+  .page-footer__developer {
+    margin: 0;
+  }
+  .page-footer__social-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .page-footer {
+    width: 1200px;
+    margin: 0 auto;
     min-height: 127px;
     display: -webkit-box;
     display: -ms-flexbox;

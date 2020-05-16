@@ -60,7 +60,29 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    margin: 0 20px 0 20px;
+    //margin: 0 20px 0 20px;
+    width: 660px;
+    margin: 0 auto;
+    min-height: 127px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-footer__logo,
+  .page-footer__developer {
+    margin: 0;
+  }
+  .page-footer__social-list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    //margin: 0 20px 0 20px;
+    width: 1200px;
+    margin: 0 auto;
     min-height: 127px;
     display: flex;
     justify-content: space-between;
