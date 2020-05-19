@@ -12,6 +12,26 @@
   flex-direction: column;
 }
 
+.input-form {
+  outline: 0;
+}
+
+.input-form:hover {
+  border-color: #283645;
+}
+
+.input-form:focus {
+  border-color: #d22856;
+}
+
+.label-form:hover:before {
+  border-color: #283645;
+}
+
+.label-form:focus:before {
+  border-color: #d22856;
+}
+
 .history__form-fieldset {
   border: 0;
   margin: 0;
@@ -224,18 +244,11 @@
   color: #283645;
 }
 
-.history__form-button {
+.history__button-submit {
   margin: 0 auto;
+  text-align: center;
   width: 276px;
   height: 59px;
-  border: 2px solid #2aab6d;
-  border-radius: 3px;
-  background-color: #2aab6d;
-  text-align: center;
-}
-
-.history__button-submit {
-  border: 0;
   color: #ffffff;
   background-color: transparent;
   text-transform: uppercase;
@@ -243,6 +256,23 @@
   font-weight: bold;
   line-height: 59px;
   vertical-align: middle;
+  border: 2px solid #2aab6d;
+  border-radius: 3px;
+  background-color: #2aab6d;
+}
+
+.history__button-submit:hover {
+  border-color: #1c9b5e;
+  background-color: #1c9b5e;
+}
+
+.history__button-submit:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.history__button-submit:disabled {
+  border-color: #e5e5e5;
+  background-color: #e5e5e5;
 }
 
 .history__note {
