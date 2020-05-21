@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 320px;
   background-color: #ffffff;
   font-family: 'Open Sans', sans-serif;
 }
@@ -287,9 +288,9 @@ body {
 }
 .download-application {
   position: relative;
-  width: 100%;
-  min-height: 733px;
   border: 1px solid transparent;
+  width: 100%;
+  min-height: 667px;
 }
 .download-application::before {
   display: block;
@@ -343,7 +344,7 @@ body {
   width: 225px;
   margin: 0 auto;
   margin-top: 29px;
-  margin-bottom: 347px;
+  margin-bottom: 338px;
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
@@ -351,11 +352,13 @@ body {
   opacity: 0.7;
 }
 .download-application__button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 28px auto 32px auto;
   display: block;
-  width: 281px;
+  width: 282px;
   height: 55px;
-  line-height: 55px;
+  line-height: 49px;
   text-decoration: none;
   border: 3px solid #ffffff;
   border-radius: 50px;
@@ -392,8 +395,7 @@ body {
 }
 .download-application__info-win {
   margin: 0 auto;
-  margin-top: 28px;
-  margin-bottom: 35px;
+  margin-top: 20px;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;
@@ -628,18 +630,18 @@ body {
   }
 }
 .characteristics-application__slogan {
-  margin-top: 46px;
+  margin-top: 40px;
   padding-left: 50px;
   padding-right: 50px;
-  margin-bottom: 0;
   font-size: 24px;
+  line-height: 30px;
   font-weight: 300;
   text-align: center;
   color: #283645;
 }
 .characteristics-application__slogan-question {
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 .characteristics-application__menu {
   position: relative;
@@ -649,7 +651,7 @@ body {
 .characteristics-application__menu::before {
   display: block;
   content: "";
-  height: 120px;
+  height: 36px;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.0' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='1200px' height='94.074px' viewBox='0 0 1200 94.074' enable-background='new 0 0 1200 94.074' xml:space='preserve'%3e%3cpolygon fill='%23ffffff' points='1200,0 0,0 0,94.074 '/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-size: cover;
@@ -659,17 +661,17 @@ body {
 }
 .characteristics-application__list {
   margin: 0;
-  margin-top: 40px;
+  margin-top: 50px;
   padding: 0;
   list-style: none;
   background-color: #f2f2f2;
 }
 .characteristics-application__list::after {
   display: block;
-  margin: 45px auto 0px auto;
+  margin: 43px auto 0px auto;
   content: "";
   width: 157px;
-  height: 268px;
+  height: 274px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: 157px 320px;
@@ -684,14 +686,13 @@ body {
   text-align: center;
 }
 .characteristics-application__item:first-of-type {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .characteristics-application__item:nth-of-type(2) {
-  margin-bottom: 38px;
+  margin-bottom: 33px;
 }
 .characteristics-application__item-title {
   font-size: 18px;
-  line-height: 1.71;
   font-weight: bold;
   color: black;
 }
@@ -709,7 +710,7 @@ body {
 }
 .characteristics-application__item-description3 {
   padding-left: 30px;
-  padding-right: 31px;
+  padding-right: 30px;
 }
 @media (min-width: 660px) {
   .characteristics-application__slogan {
@@ -887,7 +888,7 @@ body {
 }
 .feedback {
   position: relative;
-  margin-top: 49px;
+  margin-top: 43px;
 }
 .feedback__slider-labels {
   position: absolute;
@@ -905,7 +906,7 @@ body {
 }
 .feedback__slider-item {
   display: none;
-  margin: 0 22px 39px 22px;
+  margin: 0 21px 37px 21px;
   text-align: center;
 }
 .feedback__slider-header {
@@ -923,7 +924,7 @@ body {
   display: none;
 }
 .feedback__slider-label::before {
-  margin-right: 13px;
+  margin-right: 9px;
   display: inline-block;
   content: "";
   width: 6px;
@@ -1089,14 +1090,14 @@ body {
   }
 }
 .tariff {
-  min-height: 506px;
+  min-height: 508px;
   position: relative;
   background-color: #f2f2f2;
 }
 .tariff::before {
   display: block;
   content: "";
-  min-height: 120px;
+  min-height: 62px;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.0' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='1200px' height='94.074px' viewBox='0 0 1200 94.074' enable-background='new 0 0 1200 94.074' xml:space='preserve'%3e%3cpolygon fill='%23ffffff' points='1200,0 0,0 0,94.074 '/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1106,6 +1107,7 @@ body {
 }
 .tariff__table {
   width: auto;
+  margin-top: 65px;
   position: relative;
   top: 0;
   left: 0;
@@ -1114,10 +1116,11 @@ body {
 .tariff__table-head {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 23px 91px 21px 70px;
+  padding: 14px 70px 25px 90px;
   width: 276px;
   height: 94px;
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
   border: 2px solid #f2f2f2;
   background-color: #283645;
@@ -1128,27 +1131,29 @@ body {
 }
 .tariff__table-standart::before {
   position: absolute;
-  top: 0;
-  left: -1px;
+  top: 0px;
+  left: -3px;
   display: block;
   content: "";
-  width: 74px;
-  height: 73px;
+  width: 73px;
+  height: 70px;
   background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: 73px 70px;
 }
 .tariff__table-standart::after {
   position: absolute;
-  top: 7px;
-  left: 7px;
+  top: 9px;
+  left: 1px;
   display: block;
   content: "ХИТ";
   width: 74px;
   height: 73px;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 21px;
   color: #ffffff;
+  font-weight: normal;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
@@ -1194,7 +1199,7 @@ body {
   display: none;
 }
 .tariff__slider-label::before {
-  margin-right: 13px;
+  margin-right: 9px;
   display: inline-block;
   content: "";
   width: 6px;
@@ -1214,7 +1219,7 @@ body {
 }
 .tariff__slider-labels {
   position: absolute;
-  bottom: 35px;
+  bottom: 40px;
   left: 50%;
   margin-left: -31px;
 }
@@ -1228,7 +1233,7 @@ body {
   left: 30px;
 }
 .tariff__slider-input--slide2:checked ~ .tariff__table {
-  left: -234px;
+  left: -240px;
 }
 .tariff__slider-input--slide3:checked ~ .tariff__table {
   left: -500px;
@@ -1335,17 +1340,19 @@ body {
   text-align: center;
 }
 .contacts__slogan {
+  margin-top: 40px;
   font-size: 24px;
+  line-height: 30px;
   font-weight: 300;
   color: #283645;
 }
 .contacts__list {
-  margin: 0;
+  margin-top: 35px;
   padding: 0;
   list-style: none;
 }
 .contacts__list-item {
-  margin-bottom: 27px;
+  margin-bottom: 18px;
 }
 .contacts__head {
   font-size: 18px;
@@ -1356,6 +1363,9 @@ body {
   font-size: 24px;
   font-weight: 300;
   color: #d22856;
+}
+.contacts__address-description {
+  line-height: 30px;
 }
 .contacts__tel {
   text-align: center;
@@ -1374,6 +1384,7 @@ body {
   text-decoration: none;
 }
 .contacts__mail {
+  margin-bottom: 21px;
   padding: 0 30px;
 }
 .contacts__address {
@@ -1389,7 +1400,7 @@ body {
   min-height: 158px;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.0' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='595.28px' height='61.905px' viewBox='0 0 595.28 61.905' enable-background='new 0 0 595.28 61.905' xml:space='preserve'%3e%3cpolygon fill='%23ffffff' points='297.64,61.905 0,0 595.28,0 '/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: 50% 10%;
+  background-position: 50% 0;
   background-size: contain;
 }
 .contacts__map-iframe {
