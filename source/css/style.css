@@ -178,6 +178,9 @@ body {
   .page-header__wrapper {
     min-height: 110px;
   }
+  .page-header__head {
+    min-height: 110px;
+  }
   .page-header__logo-mobile {
     display: none;
   }
@@ -187,6 +190,7 @@ body {
   .page-header__logo {
     width: 147px;
     height: 40px;
+    margin-top: -15px;
   }
   .page-header__logo:hover .page-header__logo-tablet path,
   .page-header__logo:hover path {
@@ -195,6 +199,9 @@ body {
   .page-header__logo:hover:active .page-header__logo-tablet path {
     fill: #ffffff;
     opacity: 0.3;
+  }
+  .site-list__item-academy {
+    min-height: 65px;
   }
 }
 @media (min-width: 1200px) {
@@ -409,7 +416,7 @@ body {
   }
   .download-application::before {
     margin-top: -110px;
-    min-height: 729px;
+    min-height: 725px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 50%;
   }
@@ -424,18 +431,21 @@ body {
   .download-application__content {
     width: 320px;
     margin: 0;
-    left: 20px;
-    top: -563px;
+    left: 9px;
+    top: -556px;
   }
   .download-application__slogan {
-    margin-bottom: 39px;
+    margin-bottom: 28px;
     font-size: 40px;
+    font-weight: 300;
+    line-height: 50px;
   }
   .download-application__button {
     width: 300px;
     margin-bottom: 46px;
   }
   .download-application__info-win {
+    margin-top: 30px;
     font-size: 18px;
     line-height: 1.33;
     margin-left: auto;
@@ -714,7 +724,7 @@ body {
 }
 @media (min-width: 660px) {
   .characteristics-application__slogan {
-    margin-top: 46px;
+    margin-top: 57px;
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 0;
@@ -722,11 +732,15 @@ body {
     font-weight: 300;
   }
   .characteristics-application__slogan-question {
-    margin-bottom: 0;
+    margin-bottom: 11px;
   }
   .characteristics-application__slogan-answer {
     padding-left: 10px;
     padding-right: 10px;
+    line-height: 47px;
+  }
+  .characteristics-application__menu::before {
+    height: 100px;
   }
   .characteristics-application__menu {
     min-height: 550px;
@@ -737,6 +751,7 @@ body {
   }
   .characteristics-application__list {
     width: 660px;
+    margin: 0 auto;
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -748,7 +763,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 23px;
   }
   .characteristics-application__list::after {
     position: absolute;

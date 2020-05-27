@@ -94,7 +94,7 @@
 
 @media (min-width: @tablet-width) {
   .characteristics-application__slogan {
-    margin-top: 46px;
+    margin-top: 57px;
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 0;
@@ -102,12 +102,18 @@
     font-weight: 300;
   }
   .characteristics-application__slogan-question {
-    margin-bottom: 0;
+    margin-bottom: 11px;
   }
   .characteristics-application__slogan-answer {
     padding-left: 10px;
     padding-right: 10px;
+    line-height: 47px;
   }
+
+  .characteristics-application__menu::before {
+    height: 100px;
+  }
+
   .characteristics-application__menu {
     min-height: 550px;
     position: relative;
@@ -118,11 +124,12 @@
 
   .characteristics-application__list {
     width: 660px;
+    margin: 0 auto;
     position: absolute;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 23px;
   }
 
   .characteristics-application__list::after {
